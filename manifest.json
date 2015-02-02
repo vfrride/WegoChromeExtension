@@ -1,0 +1,43 @@
+{
+  "name": "Wegotools",
+  "description": "Loads different servers",
+  "version": "0.6",
+  "permissions": ["contextMenus", "tabs"],
+  "icons": {
+    "16": "panda-with-glasses-small.png",
+    "128": "panda-with-glasses.png"
+  },
+  "background": {
+    "page": "wego_panel.html"
+  },
+  "page_action" :
+  {
+    "default_title" : "Wegotools",
+    "default_popup" : "instructions.html"
+  },
+  "commands": {
+    "staging": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Open tab as staging"
+    },
+    "localhost": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+L",
+        "mac": "Command+Shift+L"
+      },
+      "description": "Open tab as localhost"
+    },
+    "production": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "Open tab as production"
+    }
+  },
+  "options_page": "options.html",
+  "manifest_version": 2
+}
